@@ -1,0 +1,35 @@
+﻿html {
+}
+
+@import "mixin.less";
+
+.main-content {
+
+    .speedometer {
+        position: relative;
+        height: 440px;
+        width: 440px;
+
+        .meter-div {
+            height: 100%;
+            width: 100%;
+            .img-background-color-green{
+                .background-color-opacity(0, 128, 0, 0.2);
+            }
+            .img-background-color-orange{
+                .background-color-opacity(255, 106, 0, 0.2);
+            }
+            .img-background-color-red{
+                .background-color-opacity(255, 0, 0, 0.2);
+            }
+        }
+
+        .dial-image {
+            position: absolute;
+            top: 16%;
+            left: 44%;
+            transform: rotate(0deg);
+            transform-origin: 49% 83.70%;
+        }
+    }
+}
